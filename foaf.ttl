@@ -7,7 +7,7 @@
 @prefix social: <http://users.dcc.uchile.cl/~ahogan/social.ttl#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix wd: <http://www.wikidata.org/entity/>.
-@prefix gndo: <http://d-nb.info/standards/elementset/gnd#>
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#>.
 
 
 <> a foaf:Document ;
