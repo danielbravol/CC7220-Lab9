@@ -1,0 +1,32 @@
+@base <http://raw.githubusercontent.com/danielbravol/CC7220-Lab9/main/foaf.ttl> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix social: <http://users.dcc.uchile.cl/~ahogan/social.ttl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix wd: <http://www.wikidata.org/entity/>.
+
+
+<> a foaf:Document ;
+   dc:date "2020-12-10"^^xsd:date ;
+   dc:title "Daniel's FOAF Profile"@en ;
+   foaf:primaryTopic <#db> ;
+   dc:creator <#db> .
+
+<#db> a foaf:Person ;
+   rdfs:label "Daniel Bravo" ;
+   rdfs:comment "Estudiante del DCC"@es ;
+   foaf:name "Daniel Bravo" ;
+   foaf:givenName "Daniel" ;
+   foaf:familyName "Bravo" ;
+   foaf:age 22 ; # it would be better to put date of birth to not have to update every birthday, but hey :)
+   foaf:img <https://scontent.fscl10-1.fna.fbcdn.net/v/t1.0-9/128569621_189368666136305_8588797526374933808_n.jpg?_nc_cat=110&ccb=2&_nc_sid=dbeb18&_nc_ohc=BG8BdSSdkSgAX-CrAGH&_nc_ht=scontent.fscl10-1.fna&oh=d07463543c818f7524b0a4beccb94c34&oe=5FF9E119> ;
+   foaf:homepage <https://steamcommunity.com/id/mrpandiwi/> ;
+   foaf:knows <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#ah> , <http://raw.githubusercontent.com/joseespinadote/joseespinadote.github.io/master/foaf.ttl#c8>, <http://raw.githubusercontent.com/DaniferMoreno/Lab-9/main/foaf.ttl#dmc>, <http://raw.githubusercontent.com/gmartinez/Lab9/main/foaf.ttl> ;
+   social:hasEnemy <http://users.dcc.uchile.cl/~ahogan/foaf.ttl#ah>, <http://raw.githubusercontent.com/gmartinez/Lab9/main/foaf.ttl> ;
+   foaf:interest wd:Q54837 , wd:Q59788987 , wd:Q155653 , wd:Q29300592, wd:Q17634308, wd:Q55076932 ;
+   social:hasSpiritAnimal wd:Q23390 ;
+   foaf:nick 'Panda' ;
+   foaf:myersBriggs "INFJ" .
